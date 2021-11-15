@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>ParaView Glance Test Page</title>
+  </head>
+  <body>
+    Hi
+    <p>
+    <script>
+        var app = "https://kitware.github.io/paraview-glance/app";
+        var datadir = "https://raw.githubusercontent.com/mbarzegary/datasets-and-scenes/main/";
+        var file = "test.vtkjs";
+
+        document.write("<iframe src='" + app + "?name=" + file + "&url=" +datadir + file + "' id='iframe' width='1100' height='900'></iframe>");
+    </script>
+  </body>
+</html>
