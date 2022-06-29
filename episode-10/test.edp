@@ -1,0 +1,13 @@
+load "testFunction"
+load "trigFunction"
+
+mesh Mesh = square(10, 10);
+fespace SpaceP1(Mesh, P1);
+
+SpaceP1 uh = check(6);
+SpaceP1 uh2 = trig();
+
+print("Hi!");
+
+// plot(uh);
+plot(uh2);
